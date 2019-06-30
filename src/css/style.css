@@ -12,6 +12,9 @@ body {
 .justify-content-between {
 	justify-content: space-between;
 }
+.icon_disabled {
+	color: #9e9999;
+}
 .align-items-center {
 	align-items: center;
 }

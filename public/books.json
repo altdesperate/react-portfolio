@@ -1,0 +1,83 @@
+[
+  {
+    "id": 0,
+    "title": "You Don't Know JS: Up & Going",
+    "author": "Kyle Simpson",
+    "image": "https://covers.oreillystatic.com/images/0636920039303/lrg.jpg",
+    "price": 23,
+		"rating": 4,
+		"date": "March 2015"
+	},
+	{
+    "id": 1,
+    "title": "You Don't Know JS: Scope & Closures",
+    "author": "Kyle Simpson",
+    "image": "https://covers.oreillystatic.com/images/0636920026327/lrg.jpg",
+    "price": 22,
+		"rating": 5,
+		"date": "March 2014"
+	},
+	{
+    "id": 2,
+    "title": "You Don't Know JS: this & Object Prototypes",
+    "author": "Kyle Simpson",
+    "image": "https://covers.oreillystatic.com/images/0636920033738/lrg.jpg",
+    "price": 16,
+		"rating": 5,
+		"date": "July 2014"
+	},
+	{
+    "id": 3,
+    "title": "You Don't Know JS: Types & Grammar",
+    "author": "Kyle Simpson",
+    "image": "https://covers.oreillystatic.com/images/0636920033745/lrg.jpg",
+    "price": 20,
+		"rating": 4,
+		"date": "February 2014"
+	},
+	{
+    "id": 4,
+    "title": "You Don't Know JS: Async & Performance",
+    "author": "Kyle Simpson",
+    "image": "https://covers.oreillystatic.com/images/0636920033752/lrg.jpg",
+    "price": 17,
+		"rating": 4,
+		"date": "February 2015"
+	},
+	{
+    "id": 5,
+    "title": "You Don't Know JS: ES6 & Beyond",
+    "author": "Kyle Simpson",
+    "image": "https://covers.oreillystatic.com/images/0636920033769/lrg.jpg",
+    "price": 26,
+		"rating": 5,
+		"date": "December 2015"
+	},
+	{
+    "id": 6,
+    "title": "JQuery Pocket Reference",
+    "author": "David Flanagan",
+    "image": "http://t0.gstatic.com/images?q=tbn:ANd9GcTn1ORKaymBbQ1Le8AEb9pskSTV4-7S5-0bEl1rrAQ1ZxXUFokn",
+    "price": 1,
+		"rating": 1,
+		"date": "December 2010"
+	},
+	{
+    "id": 7,
+    "title": "JavaScript Pocket Reference",
+    "author": "David Flanagan",
+    "image": "http://t0.gstatic.com/images?q=tbn:ANd9GcSvj5uJue5i_wwnUDbNzw0Yg2atIdo04T8ozSZoMpuYuZ27aUGI",
+    "price": 20,
+		"rating": 3,
+		"date": "April 2012"
+	},
+	{
+    "id": 8,
+    "title": "JavaScript: The Definitive Guide, 5th Edition",
+    "author": "David Flanagan",
+    "image": "https://covers.oreillystatic.com/images/9780596101992/cat.gif",
+    "price": 39,
+		"rating": 4,
+		"date": "December 2008"
+	}
+]

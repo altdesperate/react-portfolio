@@ -57,6 +57,9 @@ body {
 .flex-column {
 	flex-direction: column;
 }
+.ui.popup {
+	max-width: 700px !important;
+}
 .nav .item a {
 	color: rgba(0,0,0,.87);
 	font-weight: bold;
@@ -66,7 +69,7 @@ body {
 	margin: 0 auto;
 }
 .wrapper_lg {
-	max-width: 1200px;
+	max-width: 1300px;
 	margin: 0 auto;
 }
 .ui.small-medium {
@@ -102,17 +105,21 @@ body {
 	color: #9e9999;
 	text-decoration: line-through;
 }
+.filter-block .menu {
+	width: 16em !important;
+}
 .ui.cards {
 	padding-left: 0;
 	font-size: 16px;
 	position: relative;
 }
 .card {
-	flex-basis: calc(33% - 30px);
+	flex-basis: calc(25% - 30px);
 	margin: 15px !important;
 }
 .card img {
-	height: 300px !important;
+	height: 200px !important;
+	object-fit: fill;
 }
 .checkout {
 	cursor: pointer;

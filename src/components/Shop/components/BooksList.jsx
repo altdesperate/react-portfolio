@@ -1,6 +1,6 @@
 import React from "react";
 
-import BookCard from "./BookCard";
+import BookCard from "../containers/BookCard";
 import Preloader from "./../../Preloader"
 
 const BooksList = ({ books, isLoading }) => (

@@ -30,12 +30,13 @@ const filterBooks = (books, type, isActiveOrderLowToHigh, searchBooksQuery) => {
 		return title.toLowerCase().includes(searchBooksQuery.toLowerCase()) || author.toLowerCase().includes(searchBooksQuery.toLowerCase())
 	})
 }
-export default connect(
-	state => {
-		const { isLoading, items, activeFilter, isActiveOrderLowToHigh, searchBooksQuery } = state.shop.books;
-		return {
-			isLoading,
-			searchBooksQuery,
-			items: filterBooks(items, activeFilter, isActiveOrderLowToHigh, searchBooksQuery)
-		}
-	}, { setBooks })(Shop)
+const mapStateToProps = state => {
+	const { isLoading, items, activeFilter, isActiveOrderLowToHigh, searchBooksQuery } = state.shop.books;
+	return {
+		isLoading,
+		searchBooksQuery,
+		items: filterBooks(items, activeFilter, isActiveOrderLowToHigh, searchBooksQuery)
+	}
+}
+
+export default connect(mapStateToProps, { setBooks })(Shop)

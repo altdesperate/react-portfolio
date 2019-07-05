@@ -1,34 +1,20 @@
 import React from "react";
 import { connect } from "react-redux";
 
+
+
 import AdderOfTasks from "./components/AdderOfTasks";
 import TaskList from "./components/TaskList";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
+
+
+
 
 import { addTask, toggleTask, deleteTask, searchTask, changeActiveFilter } from "./actions/actions"
 
 class ToDo extends React.Component {
 	state = {
 		addTaskInputValue: ""
-	}
-	render() {
-		const { addTaskInputValue } = this.state;
-		const { tasks, activeFilter, toggleTask, deleteTask, searchTask, changeActiveFilter } = this.props;
-		return (
-			<div className="wrapper_md flex-center flex-column d-flex">
-				<h1 className="ui header">To-do application</h1>
-				<div className="ui tall stacked segment full-width">
-					<AdderOfTasks 
-						addTask={this.addTask}
-						addTaskInputValue={addTaskInputValue}
-						setInputValueToState={this.setInputValueToState}
-						searchTask={searchTask}
-					/>
-					<TaskList deleteTask={deleteTask} toggleTask={toggleTask} tasks={tasks} />
-					<Footer changeActiveFilter={changeActiveFilter} activeFilter={activeFilter} />
-				</div>
-			</div>
-		)
 	}
 	addTask = ({ type, key }) => {
 		const { addTask } = this.props;
@@ -52,6 +38,25 @@ class ToDo extends React.Component {
 		this.setState({
 			[name]: value
 		})
+	}
+	render() {
+		const { addTaskInputValue } = this.state;
+		const { tasks, activeFilter, toggleTask, deleteTask, searchTask, changeActiveFilter } = this.props;
+		return (
+			<div className="wrapper_md flex-center flex-column d-flex">
+				<h1 className="ui header">To-do application</h1>
+				<div className="ui tall stacked segment full-width">
+					<AdderOfTasks 
+						addTask={this.addTask}
+						addTaskInputValue={addTaskInputValue}
+						setInputValueToState={this.setInputValueToState}
+						searchTask={searchTask}
+					/>
+					<TaskList deleteTask={deleteTask} toggleTask={toggleTask} tasks={tasks} />
+					<Footer changeActiveFilter={changeActiveFilter} activeFilter={activeFilter} />
+				</div>
+			</div>
+		)
 	}
 }
 

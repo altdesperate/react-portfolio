@@ -26,11 +26,12 @@ export const FILTERS = [
 	}
 ]
 
-export default connect(
-	state => {
-		const { activeFilter, isActiveOrderLowToHigh } = state.shop.books;
-		return {
-			activeFilter,
-			isActiveOrderLowToHigh
-		}
-	}, { changeActiveFilter, changeActiveOrder })(Filters)
+const mapStateToProps = state => {
+	const { activeFilter, isActiveOrderLowToHigh } = state.shop.books;
+	return {
+		activeFilter,
+		isActiveOrderLowToHigh
+	}
+}
+
+export default connect(mapStateToProps, { changeActiveFilter, changeActiveOrder })(Filters)

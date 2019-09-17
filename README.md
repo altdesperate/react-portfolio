@@ -5,4 +5,8 @@ React portfolio, with:
 
 Stack:
 
-React, Redux, React Router, Semantic UI. In future will add Redux-Saga.
+React, Redux, React Router, Semantic UI.
+
+To start the development server, run:
+1) npm install (at first time)
+2) npm start (always)

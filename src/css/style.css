@@ -2,6 +2,10 @@ body {
 	font-size: 20px;
 	margin: 0;
 }
+.ui.header.home__header {
+	margin-top: 100px !important;
+
+}
 .d-flex {
 	display: flex !important;
 }
@@ -77,6 +81,9 @@ body {
 }
 .full-width {
 	width: 100%;
+}
+.full-height {
+	height: 100%;
 }
 .ui.tall.stacked .icon {
 	cursor: pointer !important;
